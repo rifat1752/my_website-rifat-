@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.banner_img{
+/* .banner_img{
    filter: drop-shadow(10px 7px 10px rgba(255, 166, 0, 0.644));
+} */
+
+@layer components {
+
 }

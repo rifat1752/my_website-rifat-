@@ -3,8 +3,9 @@ import { GoDotFill } from "react-icons/go";
 import { FaGithub,FaLinkedinIn,FaFacebook  } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io";
-import im from '../../assets/im.png';
 import { Link } from "react-router-dom";
+import Lottie from "lottie-react";
+import animation1 from '../../assets/lottie/animation1.json'
 
 const Banner = () => {
     return (
@@ -30,8 +31,10 @@ const Banner = () => {
                </div>
               
             </div>
-            <div className="image mx-auto col-span-3 h-full ">
-                <figure className="w-full h-screen"><img className="banner-img h-screen banner_img" src={im} alt="" /></figure>
+            <div className="image mx-auto flex items-end col-span-3 w-full h-full ">
+                <figure className="w-3/4  m-auto">
+                  <Lottie animationData={animation1} loop={true}> </Lottie>
+                </figure>
             </div>
         </div>
     );
