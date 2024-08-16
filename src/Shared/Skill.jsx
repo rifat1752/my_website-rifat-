@@ -33,19 +33,23 @@ const Skill = () => {
   ];
 
   return (
-    <div className='my-10'>
-      <div className="info w-2/3 mx-auto">
-        <h1 className='text-yellow-300 font-bold text-5xl text-center py-5'>What I Do</h1>
-        <p className='text-lg font-semibold text-center font-nova'>
+    <div className='my-10 py-10 px-5 bg-base-200 rounded-2xl border-2 border-slate-800 '>
+      <div data-aos="zoom-in"
+      data-aos-duration="500"
+       className="info sm:w-2/3 sm:mx-auto">
+        <h1 className='text-yellow-300  font-bold text-5xl text-center py-5'>What I Do</h1>
+        <p className=' text-lg font-semibold  text-justify sm:text-center font-nova'>
           Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my experience? 
           Check out my <Link className='text-blue-400 border-b-2 border-blue-400' to={'/project'}>projects.</Link>
         </p>
       </div>
-      <div className='grid grid-cols-5 gap-10 mt-10'>
+      <div className='grid grid-cols-1  sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-10 mt-10'>
         {skills.map(skill => (
           <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
             key={skill.id}
-            className='group w-36 h-40 border-2 border-slate-200 rounded-lg flex flex-col justify-evenly items-center shadow-md shadow-yellow-200'
+            className=' hover:border-yellow-400 transition duration-1000 group w-36  h-40 border-2 border-slate-200 rounded-lg flex flex-col justify-evenly items-center shadow-md hover:shadow-lg  shadow-yellow-200 hover:shadow-yellow-500'
             style={{
               '--hover-color': colorMap[skill.bg] || 'black' // Default to black if color not found
             }}
@@ -56,15 +60,20 @@ const Skill = () => {
             >
               {skill.logo}
             </figure>
-            <p className='text-xl text-slate-300 font-semibold font-nova' style={{ transition: 'color 0.3s' }}>{skill.name}</p>
+            <p className='text-xl text-slate-300 font-semibold font-nova w-full text-center bg-red ' style={{ transition: 'color 0.3s' }}>{skill.name}</p>
             <style>{`
+            .group:hover {
+      transform: scale(1.1); 
+    }
               .group:hover figure, .group:hover p {
                 color: var(--hover-color);
+                scale:
               }
             `}</style>
           </div>
         ))}
       </div>
+      
     </div>
   );
 };

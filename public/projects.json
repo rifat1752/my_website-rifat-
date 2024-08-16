@@ -1,0 +1,92 @@
+[
+    {
+        "_id": "1",
+        "name": "2Ring",
+        "img": "",
+        "live-link": "https://2ring.netlify.app/",
+        "github-link": "https://github.com/rifat1752/2-Ring-Wedding-website",
+        "description": " Developed a weddings management website (2Ring) with dynamic routing, event services, and secure service details accessible through a private route. Implemented email/password and Google login authentication using Firebase.",
+            "tools": ["ReactRouter","ReactJS","JavaScript","Firebase","TailwindCSS"]
+    },
+    {
+        "_id": "2",
+        "name": "NewsPortal",
+        "img": "",
+        "live-link": "https://dragonnews24.netlify.app/",
+        "github-link": "hhttps://github.com/rifat1752/News-Portal-Website",
+        "description": " Developed a comprehensive news website leveraging ReactJS, React Router, and modern frameworks like TailwindCSS and DaisyUI. Implemented active routes, dynamic news feeds, and user authentication systems using email/password and Google login via Firebase.  ",
+            "tools": ["ReactRouter","ReactJS","JavaScript","Firebase","TailwindCSS"]
+    },
+    {
+        "_id": "3",
+        "name": "JobsHub",
+        "img": "",
+        "live-link": "https://jobshub.netlify.app/",
+        "github-link": "https://github.com/rifat1752/Jobs_hub",
+        "description": "  Created JobsHub, a dynamic job portal with active routes for easy job navigation. Implemented private routes for job details, ensuring secure access only for logged-in users. Integrated email-based and Google login authentication for enhanced user engagement.",
+            "tools": ["ReactRouter","ReactJS","JavaScript","Firebase","TailwindCSS"]
+    },
+    {
+        "_id": "4",
+        "name": "Donation",
+        "img": "",
+        "live-link": "https://dona-camp.netlify.app/",
+        "github-link": "https://github.com/rifat1752/donation-compaign",
+        "description": " The Donation Details page dynamically showcases selected donation details Donate button that  triggers success message. Meanwhile, the Donation Page displays all donations in pairs of cards, maintaining visual harmony with the Home page through matching background colors. Each card provides essential information with View Details button.",
+            "tools": ["ReactRouter","ReactJS","JavaScript","TailwindCSS"]
+    },
+    {
+        "_id": "5",
+        "name": "Course Registration",
+        "img": "",
+        "live-link": "https://course-resgistration.netlify.app/",
+        "github-link": "https://github.com/rifat1752/course-registration",
+        "description": " The project features include Shopping Cart Functionality, Error Handling and Alerts, and Dynamic Data Fetching. The state management involves selectedCards, an array tracking user-selected courses, remaining representing available credit hours, and totalCost for the cumulative credit hours cost. ",
+            "tools": ["ReactRouter","ReactJS","JavaScript","TailwindCSS"]
+    },
+    {
+        "_id": "6",
+        "name": "PH-Tube",
+        "img": "",
+        "live-link": "https://ph-tube-52.netlify.app/",
+        "github-link": "https://github.com/rifat1752/PH-Tube",
+        "description": " The project  'PHTube' that dynamically fetches video categories from an API and allows users to sort videos based on views. It features a responsive design with tabs for different categories to filter videos such as  (all , music, comedy etc ). ",
+            "tools": ["HTML","CSS","JavaScript","TailwindCSS","DaisyUI"]
+    },
+    {
+        "_id": "7",
+        "name": "TODO List",
+        "img": "",
+        "live-link": "https://todo-list-52.netlify.app/",
+        "github-link": "https://github.com/rifat1752/To-do-list-app",
+        "description": "  This To-Do app allows users to add tasks with a clean interface. It features task completion tracking with a checkbox and enables task removal. The app utilizes local storage to persist tasks even after the browser is closed and reopened.",
+            "tools": ["HTML","CSS","JavaScript"]
+    },
+    {
+        "_id": "8",
+        "name": "Fruit Burst ",
+        "img": "",
+        "live-link": "https://fruitburst52.netlify.app/",
+        "github-link": "https://github.com/rifat1752/fruit",
+        "description": "  Designed a online fruit-shop landing page.The responsive layout features a captivating banner, fruit card, etc section. ",
+            "tools": ["HTML","CSS","TailwindCSS","DaisyUI"]
+    },
+    {
+        "_id": "9",
+        "name": "Gamer Zone",
+        "img": "",
+        "live-link": "https://gamerzone52.netlify.app/",
+        "github-link": "https://github.com/rifat1752/gamer-zone",
+        "description": " Designed a gamer-themed landing page using HTML and CSS .The responsive layout features a captivating banner, engaging video section, and categorized game genres  ",
+            "tools": ["HTML","CSS"]
+    },
+    {
+        "_id": "10",
+        "name": " Atlyx",
+        "img": "",
+        "live-link": "https://fruitburst52.netlify.app/",
+        "github-link": "https://github.com/rifat1752/fruit",
+        "description": " The project ,  Designed a online Business  landing page. The layout of the page is not responsive but it has captivating banner, price cards, contact etc section. ",
+            "tools": ["HTML","CSS"]
+    }
+]
