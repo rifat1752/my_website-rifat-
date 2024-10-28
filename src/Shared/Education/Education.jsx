@@ -1,5 +1,7 @@
 import kuet from '../../assets/kuet.png'
 import dmrc from '../../assets/dmrc.png'
+import { DotLottiePlayer } from '@dotlottie/react-player';
+import dotLottieAnimation from '../../assets/lottie/bubble-1.lottie';
 
 
 
@@ -8,10 +10,19 @@ const Education = () => {
 
    
     return (
-        <div className=' rounded-xl border-2 border-slate-800 my-10 py-10 bg-base-200' >
+        <div className='relative'>
+            <DotLottiePlayer
+      className="absolute inset-0  w-full h-full object-cover md:w-10/12 lg:w-2/3 rotate-0 md:-rotate-90 mx-auto"
+        src={dotLottieAnimation }
+        autoplay
+        loop
+      >
+        
+      </DotLottiePlayer>
+          <div className=' rounded-xl border-2 border-slate-800 my-10 py-10 backdrop-blur-[2px] bg-base-300/40' >
+         
             <h1 data-aos="zoom-in"
-            
-      data-aos-duration="1000" className='text-yellow-300 font-bold text-5xl md:text-5xl text-center py-10'> My Education</h1>
+      data-aos-duration="1000" className='text-yellow-400 font-bold text-5xl md:text-5xl text-center py-10'> My Education</h1>
            <div className='flex justify-center '> 
             <ul className="steps step-info steps-vertical w-11/12 md:w-3/4 ">
               <li className={`step step-info max-w-5xl mt-10` } >
@@ -33,19 +44,14 @@ const Education = () => {
                    </li>
                    <li className="step step-info">
                     <div className='flex gap-2 text-left'>
-                     <p className=' text-slate-400 text-sm  text-left'><span className='w-72 text-sm md:text-base text-yellow-300 font-semibold'>Coursework included:</span> Web Development C Programming, C++ Programming,Database System, Machine Learning</p>
+                     <p className=' text-slate-400 text-sm  text-left'><span className='w-72 text-sm md:text-base text-yellow-400 font-semibold'>Coursework included:</span> Web Development C Programming, C++ Programming,Database System, Machine Learning</p>
                     </div>
                    </li>
                 </ul>
-                  
-
-               
-               
                 </div>
               </div>
               </li>
               <li
-              
                 className="step step-secondary">
               <div 
                data-aos="fade-down-right"
@@ -70,6 +76,7 @@ const Education = () => {
               </li>
             </ul>
            </div> 
+        </div>
         </div>
     );
 };

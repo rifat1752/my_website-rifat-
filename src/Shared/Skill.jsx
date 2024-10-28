@@ -4,6 +4,8 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { TbBrandNextjs } from "react-icons/tb"; 
 import { DiMongodb } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
+import { DotLottiePlayer } from '@dotlottie/react-player';
+import dotLottieAnimation from '../assets/lottie/bubble-1.lottie';
 
 // Map Tailwind text classes to actual color values
 const colorMap = {
@@ -33,47 +35,65 @@ const Skill = () => {
   ];
 
   return (
-    <div className='my-10 py-10 px-5 bg-base-200 rounded-2xl border-2 border-slate-800 '>
+    <div className='relative'>
+      <DotLottiePlayer
+      className="absolute inset-0  w-full h-full object-cover md:w-10/12 lg:w-2/3 rotate-0 md:-rotate-90 mx-auto"
+        src={dotLottieAnimation }
+        autoplay
+        loop
+      >
+        
+      </DotLottiePlayer>
+      <div className=' my-10 py-10 px-5 backdrop-blur-[3px] bg-base-300/40 rounded-2xl border-2 border-slate-800 '>
+      
       <div data-aos="zoom-in"
       data-aos-duration="500"
        className="info sm:w-2/3 sm:mx-auto">
-        <h1 className='text-yellow-300  font-bold text-5xl text-center py-5'>What I Do</h1>
-        <p className=' text-lg font-semibold  text-justify sm:text-center font-nova'>
-          Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my experience? 
-          Check out my <Link className='text-blue-400 border-b-2 border-blue-400' to={'/project'}>projects.</Link>
+        <h1 className='text-yellow-400  font-bold text-5xl text-center py-5'>What I Do</h1>
+        <p className='text-sm md:text-base lg:text-lg font-semibold  text-justify sm:text-center font-nova'>
+          Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my Works? 
+          Check out my <Link className='text-blue-400 border-b-2 border-blue-400 hover:text-[#f75757] hover:border-[#f75757] transition-colors duration-300 ' to={'/project'}>projects.</Link>
         </p>
       </div>
-      <div className='grid grid-cols-1  sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-10 mt-10'>
-        {skills.map(skill => (
-          <div
-            data-aos="flip-left"
-            data-aos-duration="1000"
-            key={skill.id}
-            className=' hover:border-yellow-400 transition duration-1000 group w-36  h-40 border-2 border-slate-200 rounded-lg flex flex-col justify-evenly items-center shadow-md hover:shadow-lg  shadow-yellow-200 hover:shadow-yellow-500'
-            style={{
-              '--hover-color': colorMap[skill.bg] || 'black' // Default to black if color not found
-            }}
-          >
-            <figure
-              className='text-8xl '
-              style={{ transition: 'color 0.3s' }}
-            >
-              {skill.logo}
-            </figure>
-            <p className='text-xl text-slate-300 font-semibold font-nova w-full text-center bg-red ' style={{ transition: 'color 0.3s' }}>{skill.name}</p>
-            <style>{`
-            .group:hover {
-      transform: scale(1.1); 
-    }
-              .group:hover figure, .group:hover p {
-                color: var(--hover-color);
-                scale:
-              }
-            `}</style>
-          </div>
-        ))}
+      <div className='grid grid-cols-3  sm:grid-cols-3 md:grid-cols-5 place-items-center gap-10 mt-10'>
+      {skills.map(skill => (
+  <div
+    data-aos="flip-left"
+    data-aos-duration="1000"
+    key={skill.id}
+    className='hover:border-yellow-400 bg-base-300 transition duration-1000 group w-24  sm:w-28 md:w-32 lg:w-36 h-28 sm:h-32 md:h-36 lg:h-40 rounded-lg flex flex-col justify-evenly items-center shadow hover:shadow-lg shadow-yellow-300  hover:shadow-yellow-500'
+    style={{
+      '--hover-color': colorMap[skill.bg] || 'black',  // Default to black if color not found
+    }}
+  >
+    <figure
+      className='text-6xl md:text-7xl lg:text-8xl'
+      style={{
+        color: colorMap[skill.bg] || 'black',  // Set color dynamically without hover
+        transition: 'color 0.3s'
+      }}
+    >
+      {skill.logo}
+    </figure>
+    <p className='text-base md:text-lg lg:text-xl text-slate-300 font-semibold font-nova w-full text-center'
+      style={{
+        color: colorMap[skill.bg] || 'black',  // Set color dynamically without hover
+        transition: 'color 0.3s'
+      }}
+    >
+      {skill.name}
+    </p>
+    <style>{`
+      .group:hover {
+        transform: scale(1.1);  // Keep the hover scale effect
+      }
+    `}</style>
+  </div>
+))}
+
       </div>
       
+    </div>
     </div>
   );
 };

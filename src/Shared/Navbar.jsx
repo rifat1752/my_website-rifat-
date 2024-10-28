@@ -12,21 +12,21 @@ const Navbar = () => {
     return (
         <div >
             <nav
-            className={`md:flex flex-col md:flex-row justify-between  md:h-16 text-bg-white my-3  mb-5  md:mb-0 items-center  ${open === true?' h-64 border-2 md:border-none border-slate-800 rounded-xl  bg-base-200 md:bg-none ':''}`}>
-            <div className="flex  flex-row justify-between items-center">
-               <div className="  p-4 float-start"><p className="text-3xl text-yellow-300 font-nova font-extrabold   "><Link to={'/'}>&lt;RIFAT/&gt;</Link></p></div>
-               <div className="float-right p-2 md:hidden " onClick={Clicked}>{open===true?<FaWindowClose className=" text-4xl  cursor-pointer " />:<IoMdMenu className="text-4xl text-yellow-300 cursor-pointer " /> }
+            className={`md:flex flex-col md:flex-row  justify-between   md:h-16 text-bg-white my-3  mb-5  md:mb-0   ${open == true?' h-64 border-2 md:border-none border-slate-800 rounded-b-xl  bg-base-200 md:bg-transparent    ':''}`}>
+               <div className="flex  flex-row justify-between items-center">
+               <div className="  p-4 float-start"><p className="text-3xl text-yellow-400 font-nova font-extrabold   "><Link to={'/'}>&lt;RIFAT/&gt;</Link></p></div>
+               <div className="float-right p-2 md:hidden " onClick={Clicked}>{open===true?<FaWindowClose className=" text-4xl  cursor-pointer " />:<IoMdMenu className="text-4xl text-yellow-400 cursor-pointer " /> }
                </div>
-            </div>
-            <div className= {`w-36 md:w-auto  pb-2 justify-center items-center  flex flex-col md:flex-row     md:transparent rounded  bg-opacity-80 md:bg-opacity-0 absolute md:static ${open === true?'top-15 ml-2 sm:ml-8 md:ml-0 w-5/6 ':'-top-96'} `}>
+              </div>
+              <div className= {`w-full md:w-auto   pb-2 justify-center  items-center  flex flex-col md:flex-row     md:transparent rounded  bg-opacity-80 md:bg-opacity-0  absolute md:static ${open == true?'top-15  ml-0 w-5/6 ':'-top-96'} `}>
              
-                    <li className="list-none mx-6 text-lg   font-bold"><NavLink to='/' className={({ isActive, isPending }) =>isActive? "active text-yellow-300 border-b-2 border-yellow-300  ": isPending? "pending": ""}>Home</NavLink></li>
-                    <li className="list-none mx-6 text-lg  font-bold"><NavLink to='/about' className={({ isActive, isPending }) =>isActive? "active text-yellow-300 border-b-2 border-yellow-300": isPending? "pending ": ""}>About</NavLink> </li>
-                    <li className="list-none mx-6 text-lg  font-bold"><NavLink to='/project' className={({ isActive, isPending }) =>isActive? "active text-yellow-300 border-b-2 border-yellow-300": isPending? "pending": ""}>Projects</NavLink> </li>
-                   <li className="list-none mx-6 text-lg  font-bold"><NavLink to='/contact' className={({ isActive, isPending }) =>isActive? "active  text-yellow-300 border-b-2 border-yellow-300": isPending? "pending": ""}>Contact</NavLink> </li>
-                   <Link className=""><button className="w-32 h-10  md:mr-6 mt-2 md:mt-0 font-semibold   text-yellow-300  nav-btn  nav-btn1     ">Download CV</button></Link>
-           </div>
-            </nav>
+                    <li className="list-none mx-6 text-lg   font-bold"><NavLink to='/' className={({ isActive, isPending }) =>isActive? "active text-yellow-400   ": isPending? "pending": ""}>Home</NavLink></li>
+                    <li className="list-none mx-6 text-lg  font-bold"><NavLink to='/about' className={({ isActive, isPending }) =>isActive? "active text-yellow-400 ": isPending? "pending ": ""}>About</NavLink> </li>
+                    <li className="list-none mx-6 text-lg  font-bold"><NavLink to='/project' className={({ isActive, isPending }) =>isActive? "active text-yellow-400": isPending? "pending": ""}>Projects</NavLink> </li>
+                   <li className="list-none mx-6 text-lg  font-bold"><NavLink to='/contact' className={({ isActive, isPending }) =>isActive? "active  text-yellow-400 ": isPending? "pending": ""}>Contact</NavLink> </li>
+                   <Link className=""><button className="w-32 h-10  md:mr-6 mt-2 md:mt-0 font-semibold   text-yellow-400  nav-btn  nav-btn1     ">Download CV</button></Link>
+               </div>
+          </nav>
         </div>
     );
 };
