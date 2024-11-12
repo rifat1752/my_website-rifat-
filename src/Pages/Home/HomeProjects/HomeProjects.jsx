@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import './styles.css';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import { DotLottiePlayer } from '@dotlottie/react-player';
 import dotLottieAnimation from '../../../assets/lottie/bubble-1.lottie';
 
@@ -25,7 +25,7 @@ const HomeProjects =()=> {
     .then(data=>  setHomeProjects(data))
   },[])
   return (
-    <div className='relative overflow-hidden'>
+    <div className='relative overflow-hidden z-50'>
         <DotLottiePlayer
       className="absolute inset-0  w-full h-full object-cover md:w-10/12 lg:w-2/3 rotate-0 md:-rotate-90 mx-auto"
         src={dotLottieAnimation }
@@ -54,7 +54,7 @@ const HomeProjects =()=> {
         }}
        
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper mx-auto   "
+        className="mySwiper mx-auto "
       >
        
         
@@ -128,13 +128,16 @@ const HomeProjects =()=> {
   )
   }
    </Swiper>
-<div className='  flex justify-center ml-2'>
-<Link
+
+<div className='w-full  flex justify-center '><Link
+className=' '
+to={`/project`}
 data-aos="fade-down"
       data-aos-duration="500"
- to={'/project'}><button className="w-32 h-10  md:mr-6 mt-2 md:mt-0 font-semibold hover:text-black transition-all duration-500  text-yellow-400 border hover:bg-yellow-400 border-yellow-400  rounded-md ">See All</button></Link>
-</div>   
+ ><button className="w-32 h-10   mt-2 md:mt-0 font-semibold hover:text-black transition-all duration-500  text-yellow-400 border hover:bg-yellow-400 border-yellow-400  rounded-md ">See All</button>
+ </Link>  </div>
     </div>
+    
     </div>
   );
 }
