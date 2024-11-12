@@ -21,7 +21,6 @@ const Projects = () => {
       <Helmet>
                 <meta charSet="utf-8" />
                 <title>Projects | Rifat</title>
-                <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
          <div className="relative  overflow-hidden w-full h-96 my-10    flex flex-col md:flex-row justify-center items-center bg-base-200 rounded-2xl border-2 border-slate-800">
         <DotLottiePlayer
