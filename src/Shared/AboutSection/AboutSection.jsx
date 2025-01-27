@@ -28,19 +28,19 @@ const AboutSection = () => {
            data-aos={window.innerWidth >= 768 ? "zoom-in" : "zoom-in"}   
            data-aos-easing="linear"
       data-aos-duration={window.innerWidth >= 768 ? "1000" : "500"} 
-       className="w-72  rounded    ">
+       className="w-72 2xl:w-[500px] rounded    ">
                 <img className="rounded-lg border-4  hover:shadow-xl hover:shadow-yellow-500 transition-all duration-300 hover:rotate-1 hover:" src={about} alt="" />
             </div>
         </div>
         <div  data-aos="fade-right"
          data-aos-easing="linear"
-      data-aos-duration="1000" className= "w-full  mx-auto  md:w-3/6 px-5 py-5  h-full   flex flex-col justify-center gap-3 ">
-        <h1 className=" font-bold mt-3 hidden md:block  text-yellow-400 text-center text-5xl ">I'm a</h1>
-        <p className="font-bold hidden md:block  font-nova text-center text-2xl md:text-3xl text-orange-600  my-2">Front-End Developer</p>
-            <p className="font-nova text-justify text mt-5 md:mt-10 font-semibold">
+      data-aos-duration="1000" className= "w-full  mx-auto  md:w-1/2 2xl:w-5/12 px-5 py-5  h-full   flex flex-col justify-center gap-3 ">
+        <h1 className=" font-bold mt-3 hidden md:block  text-yellow-400 text-center text-5xl 2xl:text-8xl ">I'm a</h1>
+        <p className="font-bold hidden md:block  font-nova text-center text-2xl md:text-3xl 2xl:text-5xl text-orange-600  my-2">Front-End Developer</p>
+            <p className="font-nova text-justify 2xl:text-3xl mt-5 md:mt-10 font-semibold">
             I’m a passionate Front-End Developer specializing in React.js and Node.js, dedicated to crafting seamless digital experiences. Whether it's building intuitive interfaces or ensuring accessibility and performance, I strive to create fast, visually stunning, and responsive applications that make a lasting impression. Occasionally diving into design, I enjoy shaping projects from concept to completion, all while maintaining a deep love for coding—just as strong as when I first started.
             </p>
-           <Link to='/contact' className="flex justify-center ">  <button className=" w-32 h-10 lg:ml-[-10px] bg-base-200 xl:ml-0 md:mr-6 mt-2 ml-2 md:mt-0 font-semibold hover:text-black transition-all duration-500  text-yellow-400 border hover:bg-yellow-400 border-yellow-400  rounded-md ">Let's talk</button></Link>
+           <Link to='/contact' className="flex justify-center  ">  <button className=" w-32 h-10 2xl:h-20 2xl:w-48 2xl:text-3xl lg:ml-[-10px] bg-base-200 xl:ml-0 md:mr-6 mt-2 ml-2 md:mt-0 font-semibold hover:text-black transition-all duration-500  text-yellow-400 border hover:bg-yellow-400 border-yellow-400  rounded-md ">Let's talk</button></Link>
         </div>
        <p></p>
        

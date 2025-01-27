@@ -12,9 +12,9 @@ const Root = () => {
         Aos.init( );
       },[])
     return (
-        <div className="relative max-w-screen-xl mx-5 xl:mx-auto">
+        <div className="relative max-w-full mx-5  ">
                  <DotLottiePlayer
-      className="hidden lg:flex  absolute  object-cover  h-full -z-10   "
+      className="hidden  lg:flex  absolute  object-cover  h-full -z-10   "
         src={dotLottieAnimation }
         autoplay
         loop

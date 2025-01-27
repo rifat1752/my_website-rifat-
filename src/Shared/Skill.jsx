@@ -48,34 +48,34 @@ const Skill = () => {
       
       <div data-aos="zoom-in"
       data-aos-duration="500"
-       className="info sm:w-2/3 sm:mx-auto">
-        <h1 className='text-yellow-400  font-bold text-5xl text-center py-5'>What I Do</h1>
-        <p className='text-sm md:text-base lg:text-lg font-semibold  text-justify sm:text-center font-nova'>
+       className="info sm:w-2/3 2xl:w-full sm:mx-auto">
+        <h1 className='text-yellow-400  font-bold text-5xl 2xl:text-7xl text-center py-10'>What I Do</h1>
+        <p className='text-sm md:text-base lg:text-lg 2xl:text-2xl font-semibold 2xl:my-10  text-justify sm:text-center font-nova'>
           Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my Works? 
           Check out my <Link className='text-blue-400 border-b-2 border-blue-400 hover:text-[#f75757] hover:border-[#f75757] transition-colors duration-300 ' to={'/project'}>projects.</Link>
         </p>
       </div>
-      <div className='grid grid-cols-3  sm:grid-cols-3 md:grid-cols-5 place-items-center gap-10 mt-10'>
+      <div className='grid grid-cols-3  sm:grid-cols-3 md:grid-cols-5 place-items-center gap-10 mt-20'>
       {skills.map(skill => (
   <div
     data-aos="flip-left"
     data-aos-duration="1000"
     key={skill.id}
-    className='hover:border-yellow-400 bg-base-300 transition duration-1000 group w-24  sm:w-28 md:w-32 lg:w-36 h-28 sm:h-32 md:h-36 lg:h-40 rounded-lg flex flex-col justify-evenly items-center shadow hover:shadow-lg shadow-yellow-300  hover:shadow-yellow-500'
+    className='hover:border-yellow-400 my-16 bg-base-300 transition duration-1000 group w-24  sm:w-28 md:w-32 lg:w-36 2xl:w-52 h-28 sm:h-32 md:h-36 lg:h-40 2xl:h-60 rounded-lg flex flex-col justify-evenly items-center shadow hover:shadow-lg shadow-yellow-300  hover:shadow-yellow-500'
     style={{
-      '--hover-color': colorMap[skill.bg] || 'black',  // Default to black if color not found
+      '--hover-color': colorMap[skill.bg] || 'black',  
     }}
   >
     <figure
-      className='text-6xl md:text-7xl lg:text-8xl'
+      className='text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl'
       style={{
-        color: colorMap[skill.bg] || 'black',  // Set color dynamically without hover
+        color: colorMap[skill.bg] || 'black',  
         transition: 'color 0.3s'
       }}
     >
       {skill.logo}
     </figure>
-    <p className='text-base md:text-lg lg:text-xl text-slate-300 font-semibold font-nova w-full text-center'
+    <p className='text-base md:text-lg lg:text-xl 2xl:text-3xl text-slate-300 font-semibold font-nova w-full text-center'
       style={{
         color: colorMap[skill.bg] || 'black',  // Set color dynamically without hover
         transition: 'color 0.3s'

@@ -53,11 +53,11 @@ const Form = () => {
         
         onSubmit={sendEmail}
         action=""
-        className=" w-80 bg-slate-900  border-slate-500 backdrop-blur-2xl shadow-lg shadow-cyan-500 hover:shadow-yellow-400  transition duration-500 rounded-xl p-6 h-[400px] flex flex-col justify-around"
+        className=" w-80 2xl:w-[500px] bg-slate-900  border-slate-500 backdrop-blur-2xl shadow-lg shadow-cyan-500 hover:shadow-yellow-400  transition duration-500 rounded-xl p-6 h-[400px] 2xl:h-[700px] flex flex-col justify-around"
       >
-        <p className="text-yellow-400 text-3xl">Send Message</p>
+        <p className="text-yellow-400 text-3xl 2xl:text-5xl">Send Message</p>
         <input
-          className="h-10 bg-transparent border-b-2  border-blue-400 focus:border-yellow-400 focus:outline-none"
+          className="h-10 2xl:h-14 2xl:text-2xl bg-transparent border-b-2  border-blue-400 focus:border-yellow-400 focus:outline-none"
           type="text"
           placeholder="Your Name"
           name="from_name"
@@ -65,7 +65,7 @@ const Form = () => {
           onChange={(e)=>setName(e.target.value)}
         />
         <input
-          className="h-10 bg-transparent border-b-2 border-blue-400 focus:border-yellow-400 focus:outline-none"
+          className="h-10 2xl:h-14 2xl:text-2xl bg-transparent border-b-2 border-blue-400 focus:border-yellow-400 focus:outline-none"
           type="email"
           placeholder="Your Email"
           name="from_email"
@@ -73,7 +73,7 @@ const Form = () => {
           onChange={(e)=>setEmail(e.target.value)}
         />
         <textarea
-          className="h-20 p-2 bg-transparent border-b-2 focus:border-b-2  border-blue-400  focus:border-yellow-400 focus:outline-none resize-none w-full"
+          className="h-20 2xl:h-14 2xl:text-2xl p-2 bg-transparent border-b-2 focus:border-b-2  border-blue-400  focus:border-yellow-400 focus:outline-none resize-none w-full"
           placeholder="Message"
           name="message"
           value={message} 
@@ -81,7 +81,7 @@ const Form = () => {
         ></textarea>
         <input
           type="submit"
-          className="bg-yellow-400 hover:scale-105 hover:text-xl hover:bg-teal-500 hover:text-yellow-400 transition duration-300  h-10 rounded-full text-slate-600 hover:cursor-pointer shadow-sm shadow-slate-300/45 text-lg font-semibold font-mono "
+          className="bg-yellow-400 hover:scale-105 hover:text-xl hover:bg-teal-500 hover:text-yellow-400 transition duration-300  h-10 2xl:h-14 2xl:text-2xl rounded-full text-slate-600 hover:cursor-pointer shadow-sm shadow-slate-300/45 text-lg font-semibold font-mono "
           value="Send"
         />
       </form>

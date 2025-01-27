@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div>
       <nav
-        className={`md:flex flex-col md:flex-row  justify-between   md:h-16 text-bg-white my-3  mb-5  md:mb-0   ${
+        className={`md:flex flex-col md:flex-row  justify-between   md:h-16 2xl:h-20 text-bg-white my-3  mb-5  md:mb-0   ${
           open == true
             ? " h-64 border-2 md:border-none border-slate-800 rounded-b-xl  bg-base-200 md:bg-transparent    "
             : ""
@@ -20,7 +20,7 @@ const Navbar = () => {
       >
         <div className="flex  flex-row justify-between items-center">
           <div className="  p-4 float-start">
-            <p className="text-3xl text-yellow-400 font-nova font-extrabold   ">
+            <p className="text-3xl 2xl:text-5xl text-yellow-400 font-nova font-extrabold   ">
               <Link to={"/"}>&lt;RIFAT/&gt;</Link>
             </p>
           </div>
@@ -37,7 +37,7 @@ const Navbar = () => {
             open == true ? "top-15  ml-0 w-5/6 " : "-top-96"
           } `}
         >
-          <li className="list-none mx-6 text-lg   font-bold">
+          <li className="list-none mx-6 text-lg 2xl:text-3xl  font-bold">
             <NavLink
               to="/"
               className={({ isActive, isPending }) =>
@@ -51,7 +51,7 @@ const Navbar = () => {
               Home
             </NavLink>
           </li>
-          <li className="list-none mx-6 text-lg  font-bold">
+          <li className="list-none mx-6 text-lg 2xl:text-3xl  font-bold">
             <NavLink
               to="/about"
               className={({ isActive, isPending }) =>
@@ -65,7 +65,7 @@ const Navbar = () => {
               About
             </NavLink>{" "}
           </li>
-          <li className="list-none mx-6 text-lg  font-bold">
+          <li className="list-none mx-6 text-lg 2xl:text-3xl  font-bold">
             <NavLink
               to="/project"
               className={({ isActive, isPending }) =>
@@ -75,7 +75,7 @@ const Navbar = () => {
               Projects
             </NavLink>{" "}
           </li>
-          <li className="list-none mx-6 text-lg  font-bold">
+          <li className="list-none mx-6 text-lg 2xl:text-3xl  font-bold">
             <NavLink
               to="/contact"
               className={({ isActive, isPending }) =>
@@ -94,7 +94,7 @@ const Navbar = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <button className="w-32 h-10  md:mr-6 mt-2 md:mt-0 font-semibold   text-yellow-400  nav-btn  nav-btn1">
+            <button className="w-32 2xl:w-48 2xl:text-3xl h-10  md:mr-6 mt-2 md:mt-0 font-semibold    text-yellow-400  nav-btn  nav-btn1">
               Download CV
             </button>
           </a>

@@ -33,7 +33,7 @@ const Banner = () => {
             </Lottie>
           </p>
           <h1 className="z-10 flex flex-col gap-10 text-center md:text-left">
-            <p className="z-10  text-3xl sm:text-4xl text-yellow-400 lg:text-[40px] xl:text-5xl  font-bold ">
+            <p className="z-10  text-3xl sm:text-4xl text-yellow-400 lg:text-[40px] xl:text-5xl 2xl:text-7xl   font-bold ">
               <Typewriter
                 options={{
                   strings: ["Hello, I’m RIFAT"],
@@ -50,7 +50,7 @@ const Banner = () => {
                 }}
               />
             </p>
-            <p className=" h-14  text-xl sm:text-xl  xl:text-2xl   font-bold">
+            <p className="h-14 2xl:h-28  text-xl sm:text-xl  xl:text-2xl 2xl:text-4xl   font-bold">
               <Typewriter
                 options={{
                   strings: [
@@ -64,7 +64,7 @@ const Banner = () => {
             </p>
           </h1>
 
-          <p className="text-center sm:text-left  flex items-center  justify-center md:justify-start  text-base md:text-lg  xl:text-xl  ">
+          <p className="text-center sm:text-left  flex items-center  justify-center md:justify-start  text-base md:text-lg  xl:text-xl 2xl:text-2xl ">
             <GoDotFill className="text-green-500 lg:ml-[-10px]" /> Available for
             new projects
           </p>
@@ -77,7 +77,7 @@ const Banner = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <button className="w-32 h-10 lg:ml-[-10px]  xl:ml-0 md:mr-6 mt-2 ml-2 md:mt-0 font-semibold hover:text-black transition-all duration-500  text-yellow-400 border hover:bg-yellow-400 border-yellow-400  rounded-md ">
+            <button className="w-32 2xl:w-52  2xl:text-3xl h-10 2xl:h-16 lg:ml-[-10px]  xl:ml-0 md:mr-6 mt-2 ml-2 md:mt-0 font-semibold hover:text-black transition-all duration-500  text-yellow-400 border hover:bg-yellow-400 border-yellow-400  rounded-md 2xl:rounded">
               Download CV
             </button>
           </a>

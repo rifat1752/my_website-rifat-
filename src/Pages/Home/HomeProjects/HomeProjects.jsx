@@ -34,7 +34,7 @@ const HomeProjects =()=> {
       ></DotLottiePlayer>
       <div className='mt-10 py-10 bg-base-300/40 backdrop-blur-[3px] rounded-xl border-2 border-slate-800'>
      <h1 data-aos="zoom-in"
-      data-aos-duration="500" className="text-6xl font-bold text-yellow-400 text-center">Projects</h1>
+      data-aos-duration="500" className="text-6xl 2xl:text-7xl font-bold text-yellow-400 text-center">Projects</h1>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -54,7 +54,7 @@ const HomeProjects =()=> {
         }}
        
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper mx-auto "
+        className="mySwiper  mx-auto  2xl:h-[700px]"
       >
        
         
@@ -67,9 +67,9 @@ const HomeProjects =()=> {
       data-aos="flip-left"
       data-aos-delay="200"
       data-aos-duration="1000"
-      className="w-64 h-[360px]   mx-auto"
+      className="w-64 h-[360px] 2xl:w-96 2xl:h-[550px]     mx-auto"
     >
-      <div className="w-64 h-[360px] py-4 hover:border-yellow-400  transition-all  duration-1000 shadow-lg  hover:border-none border-yellow-300/80 hover:shadow-lg  shadow-slate-700  hover:shadow-yellow-500      shad  hover:scale-105  relative mb-5 shad    text-slate-100">
+      <div className="w-64 h-[360px] 2xl:w-96 2xl:h-[550px]  py-4 hover:border-yellow-400  transition-all  duration-1000 shadow-lg  hover:border-none border-yellow-300/80 hover:shadow-lg  shadow-slate-700  hover:shadow-yellow-500      shad  hover:scale-105  relative mb-5 shad    text-slate-100">
         <figure className="w-full h-full rounded-md  ">
           <img
             className="w-full    h-full mx-auto  "
@@ -78,18 +78,18 @@ const HomeProjects =()=> {
           />
         </figure>
         <div className="project_text p-2 flex flex-col justify-between">
-          <h1 className="text-3xl text-[yellow] font-bold text-center border-b-2 pb-2 border-sky-300 ">
+          <h1 className="text-3xl 2xl:text-5xl text-[yellow] font-bold text-center border-b-2 pb-2 2xl:pb-4 border-sky-300 ">
             {project.name}
           </h1>
 
-          <p className="text-xs font-nova font-light text-slate-200 text-justify">
+          <p className="text-xs 2xl:text-lg font-nova font-light text-slate-200 text-justify">
             {project.description}
           </p>
           <div className="flex flex-wrap gap-1 my-2">
             {project.tools.map((tool, index) => (
               <span
                 key={index}
-                className="bg-[yellow] px-1 py-1 text-xs font-semibold text-slate-700  rounded"
+                className="bg-[yellow] px-1 py-1 text-xs 2xl:text-base font-semibold text-slate-700  rounded"
               >
                 {tool}
               </span>
@@ -98,21 +98,21 @@ const HomeProjects =()=> {
           <div className="flex justify-around  w-full ">
             <a
               href={project.live_link}
-              className="w-16   transition duration-200 hover:text-green-500 text-red-500 justify-center items-center  h-12  text-sm  font-nova font-semibold flex flex-col "
+              className="w-16   transition duration-200 hover:text-green-500 text-red-500 justify-center items-center  h-12 2xl:w-20 2xl:h-16 2xl:text-lg  text-sm  font-nova font-semibold flex flex-col "
             >
               <GoLinkExternal className="text-lg " />{" "}
               <span className=" ">Live Link</span>{" "}
             </a>
             <a
               href={project.frontend_github_link}
-              className="w-14 justify-center text-[#34ebb4] transition duration-200 hover:text-green-500 items-center  h-12  text-sm  font-nova font-semibold flex flex-col "
+              className="w-14 2xl:w-20 2xl:h-16 2xl:text-lg  justify-center text-[#34ebb4] transition duration-200 hover:text-green-500 items-center  h-12  text-sm  font-nova font-semibold flex flex-col "
             >
               <FiGithub className="text-lg" /> <span>Frontend</span>{" "}
             </a>
             {project.backend_github_link ? (
               <a
                 href={project.backend_github_link}
-                className="w-14 justify-center text-[orange] transition duration-200 hover:text-green-500 items-center  h-12  text-sm  font-nova font-semibold flex flex-col "
+                className="w-14 2xl:w-20 2xl:h-16 2xl:text-lg  justify-center text-[orange] transition duration-200 hover:text-green-500 items-center  h-12  text-sm  font-nova font-semibold flex flex-col "
               >
                 <FiGithub className="text-lg" /> <span>Backend</span>{" "}
               </a>
@@ -134,7 +134,7 @@ className=' '
 to={`/project`}
 data-aos="fade-down"
       data-aos-duration="500"
- ><button className="w-32 h-10   mt-2 md:mt-0 font-semibold hover:text-black transition-all duration-500  text-yellow-400 border hover:bg-yellow-400 border-yellow-400  rounded-md ">See All</button>
+ ><button className="w-32 h-10 2xl:h-14 2xl:rounded-xl 2xl:w-48 2xl:text-3xl  mt-2 md:mt-0 font-semibold hover:text-black transition-all duration-500  text-yellow-400 border hover:bg-yellow-400 border-yellow-400  rounded-md ">See All</button>
  </Link>  </div>
     </div>
     
